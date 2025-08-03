@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./todosapp.db" # 1. create a loc in our fastapi app ---for SQLITE3
 # engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread":False})
 
-SQLALCHEMY_DATABASE_URL = "postgresql+psycopg://postgres:gpWSHQogqJEjyvGJ@db.uxkafvxuascomhrezvhq.supabase.co:5432/postgres"# 1. create a loc in our fastapi app
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:gpWSHQogqJEjyvGJ@db.uxkafvxuascomhrezvhq.supabase.co:5432/postgres"# 1. create a loc in our fastapi app
 # postgresql://postgres:gpWSHQogqJEjyvGJ@db.uxkafvxuascomhrezvhq.supabase.co:5432/postgres
 
 #2. create engine
