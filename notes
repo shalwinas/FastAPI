@@ -1,0 +1,65 @@
+################################## - books.py - ##################################
+
+PATH PARAM
+----------
+means they are the request parameters that have been attached to the url
+-to find information based on location
+dynamic param --you can pass the dynamic param,,,,we can pass anything dynamically
+--always put in last
+app.get('/books/{book_title}')
+async def read_all_books(book_title: str) -> dict:
+    return {'Books': [book for book in BOOKS if book.get('title').casefold()==book_title.casefold()]}
+PATH PARAM -- pass something dynamic and catch it as a parameter and use it in application
+
+CASEFOLD ---casefold() powerful way to make lowercase letters
+
+
+QUERY PARAMETERS
+----------------
+they are request param that have attached after "?"
+query param have name=value pair
+example:  https://127.0.0.1:8000/books/?category=science
+
+
+################################## - books2.py - ##################################
+
+Pydantics
+--------
+its a resoruce for data validation
+basically name value pair
+title: str
+
+also has field validation such as min_length
+
+Body()--- no data validation
+
+
+DATA VALIDATION
+---------------
+1. via path parameters  --- use Path(gt, lt) from fastapi lib
+2. via query parameters --- use Query() from fastapi lib ,also inside the pydantic model use Field(description, gt, lt, min_length, max_length) from pydantic lib
+
+
+STATUS CODE
+---------
+to understand what happened in the server side
+1xx - info responses
+2xx - success requests
+3xx - redirections - further actions needed
+4xx - client error - error occured on clients
+5xx - server error -  error occured on server
+
+
+400 - bad request - invalid request method
+401 - unauthorized - when client doesnot have authentication for target resource
+404 - not found - when the client's requested resource not found
+422 - unprocessable entity - semantic error in client request
+
+starlette -- dictate what exact status is returned
+
+
+################################## - TODOS - ##################################
+Depends -- we need to do something before we execute  ---dependency injection
+
+
+Router -- a way to find main file to the root of our main file
