@@ -14,8 +14,6 @@ A simple yet robust full-stack **Todo list application** built using **FastAPI**
 
 - User registration and login (JWT auth)
 - Create, update, delete, and mark todos as completed
-- Real-time updates (if applicable)
-- Due date, priority, and categorization
 - Hosted on Render, DB on Supabase
 
 ---
