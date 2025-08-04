@@ -6,7 +6,7 @@ A simple yet robust full-stack **Todo list application** built using **FastAPI**
 
 ## 🚀 Live Demo
 
-👉 [Access the live TodoApp here](https://your-app-link.onrender.com)
+👉 [Access the live TodoApp here](https://todoapp-by-shalwin.onrender.com)
 
 ---
 
@@ -35,5 +35,5 @@ A simple yet robust full-stack **Todo list application** built using **FastAPI**
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/todoapp.git
-cd todoapp
+https://github.com/shalwinas/FastAPI_TodoApp.git
+cd TodoApp
