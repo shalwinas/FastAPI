@@ -35,3 +35,4 @@ A simple yet robust full-stack **Todo list application** built using **FastAPI**
 ```bash
 https://github.com/shalwinas/FastAPI_TodoApp.git
 cd TodoApp
+uvicorn main:app --relaod
